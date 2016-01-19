@@ -1,6 +1,7 @@
 var TelegramBot = require('node-telegram-bot-api');
 var Monitor = require('ping-monitor');
 
+//The Token is invalid, so don't even bother ;)
 var token = '160239739:AAHpwQXEMQfzv-ucr4q80ffbFtd_3cAiwME';
 var heimdallBot = new TelegramBot(token, {polling: true});
 
