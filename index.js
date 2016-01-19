@@ -1,8 +1,7 @@
 var TelegramBot = require('node-telegram-bot-api');
 var Monitor = require('ping-monitor');
 
-//The Token is invalid, so don't even bother ;)
-var token = '160239739:AAHpwQXEMQfzv-ucr4q80ffbFtd_3cAiwME';
+var token = '#############################';
 var heimdallBot = new TelegramBot(token, {polling: true});
 
 var siteStash = new Array();
@@ -17,11 +16,11 @@ function heimdallSite(website, telegramId) {
 	
 	this.monitor = new Monitor({
 		website: heimdall.website,
-		interval: 1
+		interval: 10
 	});
 
 	this.monitor.on('up', function (response) {
-		console.log('Alles knorke auf ' + response.website);
+		console.log('Everything great @ ' + response.website);
 	})
 
 	this.monitor.on('down', function (response) {
@@ -61,10 +60,6 @@ heimdallBot.on('text', function (msg) {
 		}
 			
 
-	}
-
-	if(message.indexOf('/testoida') > -1) {
-		console.log(siteStash['a24705017']);
 	}
 
 });
