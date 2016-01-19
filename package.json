@@ -1,0 +1,11 @@
+{
+  "name": "heimdall",
+  "version": "0.0.1",
+  "description": "Heimdall is a guardian application connected with a telegram bot, that will give you a daily report and will alert you if a site give's back another statuscode than '200 OK'",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Anuar Suarez",
+  "license": "ISC"
+}
