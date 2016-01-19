@@ -1,7 +1,7 @@
 var TelegramBot = require('node-telegram-bot-api');
 var Monitor = require('ping-monitor');
 
-var token = '#############################';
+var token = '####################################';
 var heimdallBot = new TelegramBot(token, {polling: true});
 
 var siteStash = new Array();

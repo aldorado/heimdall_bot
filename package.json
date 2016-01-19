@@ -1,11 +1,28 @@
 {
   "name": "heimdall",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Heimdall is a guardian application connected with a telegram bot, that will give you a daily report and will alert you if a site give's back another statuscode than '200 OK'",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Anuar Suarez",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "node-telegram-bot-api": "^0.19.2",
+    "ping-monitor": "^0.1.6"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aldorado/heimdall_bot.git"
+  },
+  "keywords": [
+    "Website",
+    "monitor"
+  ],
+  "bugs": {
+    "url": "https://github.com/aldorado/heimdall_bot/issues"
+  },
+  "homepage": "https://github.com/aldorado/heimdall_bot#readme"
 }
